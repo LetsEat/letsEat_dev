@@ -13,5 +13,3 @@ things remaining
 
 1. boiler html
 2. setting up virtual host
-
-
