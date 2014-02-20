@@ -1,3 +1,6 @@
+
+/------------- do not delete this file ---------------/
+
 accessing website from localhost on your android device
 
 http://www.mobitechie.com/android-2/how-to-access-localhost-on-android-over-wifi/
