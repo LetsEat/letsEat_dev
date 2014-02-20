@@ -12,8 +12,6 @@
 things remaining 
 
 1. boiler html
-2. angular.js
-3. setting up virtual host
-4. try to use website (localhost) from mobile.
+2. setting up virtual host
 
 
