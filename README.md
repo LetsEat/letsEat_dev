@@ -11,5 +11,13 @@
 
 things remaining 
 
-1. boiler html
-2. setting up virtual host
+1. setting up virtual host
+
+
+=============================
+
+accessing website...
+
+go to http://localhost/letsEat_dev/index.php/pratik
+
+if you add routes access as http://localhost/letsEat_dev/index.php/{route name}
