@@ -11,5 +11,14 @@
 
 things remaining 
 
-1. boiler html
-2. setting up virtual host
+1. setting up virtual host
+
+===============================================
+
+add following line to C:\wamp\www\letsEat_dev\.git\info\exclude
+
+library/Framework/*
+
+download silex (slim), twig, doctrine on your system and place them in Framework folder.
+
+it has some dependancy over system so we need different copy on every system. we will add new copy for production master (when we get a client)
