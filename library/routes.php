@@ -21,6 +21,8 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
 
 $app->get('/pratik', function(){return 'hello world1!!';});
 
+$app->get('/', function(){return 'Welcome to lets eat !!!';});
+
 $app->get('/hello/{name}', function ($name) use ($app) {
     return $app['twig']->render('hello.twig', array(
         'name' => $name,
@@ -31,4 +33,8 @@ $app->get('/db', function () use ($app) {
     $sql = "SELECT Name FROM dummytbl ";
     $post = $app['db']->fetchAssoc($sql);
     return $post['Name'];
+});
+
+$app->get('/mobile', function() use ($app){
+    return $app['twig']->render('menu.twig');
 });
