@@ -35,6 +35,15 @@ $app->get('/db', function () use ($app) {
     return $post['Name'];
 });
 
-$app->get('/mobile', function() use ($app){
-    return $app['twig']->render('menu.twig');
+$app->get('/mobile/{id}', function($id) use ($app){
+    $sql = "SELECT * FROM subMenu where mainMenuId = ?";
+    $post = $app['db']->fetchAll($sql, array($id));
+    //print_r($post);die;
+    return $app['twig']->render('menu.twig', array('items' => $post));
+});
+
+$app->get('/main', function() use ($app){
+    $sql = "SELECT * FROM mainMenu";
+    $post = $app['db']->fetchAll($sql);
+    return $app['twig']->render('mainMenu.twig', array('items' => $post));
 });

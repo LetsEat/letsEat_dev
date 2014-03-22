@@ -24,7 +24,7 @@ body {
 }
 
 a {
-    color: #00e;
+    color: #FFFFFF;
 }
 
 a:visited {
@@ -115,7 +115,7 @@ body {
 }
 
 #itemlist {	
-	background:#df6662;	
+	background-color:#df6662 !important;	
 }
 
 .item {
@@ -144,8 +144,7 @@ body {
 }
 
 #itemlistfooter {
-	background: none repeat scroll 0 0 #FFFFFF;
-	padding-bottom: 20px;
+padding: 30px 30px 30px 30px;
 }
 
 
@@ -157,7 +156,7 @@ body {
 	width:100%;
 	color:#577ea5;
 	background:#2b3e50;
-	padding:10px;
+	padding:10px 10px 10px 10px;
 	text-align:right;
 	z-index:1000;
 }
@@ -303,4 +302,71 @@ textarea[contenteditable] {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (min-resolution: 144dpi) {
     /* Style adjustments for viewports that meet the condition */
+}
+
+.main-menu-left-1{
+    width : 40%;
+    margin : 5%;
+    padding : 5%;
+    border : solid 1px blue;
+    height : 10%;
+    float : left;
+}
+
+.main-menu-right-1{
+    width : 40% ;
+    margin : 5%;
+    padding : 5%;
+    border : solid 1px blue;
+    height : 10%;
+    float: right;
+
+}
+
+.main-menu-1{
+    background-color:#df6662 !important;    
+    color: #FFFFFF;
+    text-align:left;
+    width : 35% !important;
+    margin : 20px 20px 20px 20px;
+    padding : 5%;
+    border : solid 1px blue;
+    height : 30px;
+    float : left;
+display : inline;
+}
+
+.main-menu-0{
+        background-color:#df6662 !important;    
+    color: #FFFFFF;
+    text-align:left;
+    width : 35% !important;
+        margin : 20px 20px 20px 20px;
+
+    padding : 5%;
+    border : solid 1px blue;
+    height : 30px;
+    float: right;
+display : inline;
+
+}
+
+.space{
+    margin: 10px 10px 10px 10px;
+
+}
+
+.hide {
+    visibility:hidden;
+}
+
+#itemlist-white { 
+    background-color:#FFFFFF !important;    
+}
+
+.main{
+}
+
+a:-webkit-any-link{
+text-decoration:none !important;
 }

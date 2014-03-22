@@ -9,28 +9,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="cleartype" content="on">
 
-        <!-- Tile icon for Win8 (144x144 + tile color) -->
-        <meta name="msapplication-TileColor" content="#222222">
+        <!-- Tile icon for Win8 (144x144 + tile color) 
+        <meta name="msapplication-TileColor" content="#222222">-->
 
-        <link rel="stylesheet" href="../public/css/normalize.css">
-        <link rel="stylesheet" href="../public/css/main.css">
-        <script src="../public/js/modernizr.js"></script>
+        <link rel="stylesheet" href="/letsEat_dev/public/css/normalize.css">
+        <link rel="stylesheet" href="/letsEat_dev/public/css/main.css">
+        <script src="/letsEat_dev/public/js/modernizr.js"></script>
     </head>
     <body>
             <div id="header">
-            <div id="logo">
-                <img src="../public/img/logo.png" />
-                <div id="sitename">letsEat</div>
+                <div id="logo">
+                    <img src="/letsEat_dev/public/img/logo.png" />
+                    <div id="sitename">letsEat</div>
+                </div>
             </div>
-        </div>
+            <div id="container">
+                <div id="itemlistheader">
+                    Type of dish
+                </div>
 
-            {% block content %}
-            {% endblock %}
+                {% block content %}
+                {% endblock %}
+            </div>
+            <div class="space"></div>
+                        <div class="space"></div>
+
+            <div class="space"></div>
 
         <div id="footer">
             letsEat@2013
         </div>
-        <script src="../public/js/zepto.min.js"></script>
-        <script src="../public/js/helper.js"></script>
+        <script src="/letsEat_dev/public/js/zepto.min.js"></script>
+        <script src="/letsEat_dev/public/js/helper.js"></script>
     </body>
 </html>

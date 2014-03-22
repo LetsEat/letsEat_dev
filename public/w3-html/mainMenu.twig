@@ -1,0 +1,31 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+
+
+            <div id="itemlist">
+
+    {% for item in items %}
+
+                <div id="item_1" class="item main-menu-{{(item.id)%2}}">
+                    <div class="itemname main-menu"><a href="mobile/{{item.id}}" class="main">{{item.name}}</a></div>
+
+                </div>
+             
+                 {% endfor %}
+
+                </div>
+
+                <div id="item_1 itemlist-white" class="hide">
+                    <div class="itemname">Non veg</div>
+                    <div class="itemcount">
+                     Total item:&nbsp;<h1>25</h1>
+                    </div>
+                </div>
+             
+            </div>
+            <div id="itemlistfooter">
+            </div>
+
+{% endblock %}
